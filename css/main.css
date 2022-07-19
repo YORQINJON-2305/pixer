@@ -117,13 +117,13 @@ img {
   transition: 0.2s ease;
 }
 
-.header-list-item:nth-child(2){
+.services-dropwon{
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.header-list-item:nth-child(2):hover .dropdown-list{
+.services-dropwon:hover .dropdown-list{
   opacity: 1;
   pointer-events: all;
 }
@@ -743,4 +743,109 @@ img {
 
 .instagram::before {
   background-image: url("../images/instagram-icon.svg");
+}
+
+
+/* *********************** */
+  /* SERVICES START */
+/* *********************** */
+
+.services{
+  padding-top: 140px;
+}
+
+.services-title-wrap{
+  width: 800px;
+  padding-bottom: 72px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+}
+
+.services-list-wrap{
+  padding: 80px;
+  background-color:#F4F4F4;
+}
+
+.services-list{
+  padding: 0;
+  list-style-type: none;
+}
+
+.services-item{
+  display: flex;
+  width: 804px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+.services-item:not(:last-child){
+  margin-bottom: 80px;
+}
+
+.services-item::before{
+  display: block;
+  width: 200px;
+  height: 128px;
+  margin-right: 40px;
+  background-image: url("../images/website-illustration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.services-item:nth-child(2)::before{
+  background-image: url("../images/bot-illustration.svg");
+}
+
+.services-item:nth-child(3)::before{
+  background-image: url("../images/smm-illustration.svg");
+}
+
+.services-item:nth-child(4)::before{
+  background-image: url("../images/design-illustration.svg");
+}
+
+.services-item:nth-child(5)::before{
+  background-image: url("../images/crm-illustration.svg");
+}
+
+.services-item-text-wrap{
+  width: 500px;
+  margin-left: auto;
+}
+
+.services-item-title{
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.text-list{
+  display: flex;
+  align-items: center;
+}
+
+.text-list::before{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  background-color: #00bafc;
+  border-radius: 50%;
+  content: "";
+}
+
+.new-page-link{
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
